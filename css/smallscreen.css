@@ -1,0 +1,116 @@
+/*---------------------section-hello---------------------*/
+#greeting {
+    margin-left: 18vw;
+    text-align: center;
+    font-size: 6vw;
+}
+/*------------------section-what------------------*/
+#what {
+    height: 100vmax;
+    background: url("../images/tree_backgr.png") no-repeat -31vmax 25vmax;
+    background-size: 62vmax;
+}
+
+#what .content-right {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20vmax 3% 0 5%;
+    float: none;
+    background-color: rgba(246, 249, 250, 0.8);
+}
+/*---------------------section-why---------------------*/
+#why {
+    height: 100vmax;
+    background: url("../images/mindfulness_symbol.png") no-repeat 18vmax 13vmax;
+    background-size: 50vmax;
+}
+
+.list {
+    font-size: 2.3vmax;
+}
+
+.list li:before {
+    font-size: 2.8vmax;
+}
+/*---------------------section-how---------------------*/
+#how {
+    height: 100vmax;
+    background: url("../images/fuji.png") no-repeat -70vmax -5vmax;
+    background-size: 150vmax;
+}
+
+.ordered-list {
+    font-size: 2.3vmax;
+}
+/*------------------section-contact------------------*/
+#contact {
+    height: 90vmax;
+}
+
+.content-center {
+    padding: 35vmax 0 0 0;
+}
+
+.sn-invitation {
+    font-size: 3vmax;
+    line-height: 1.8em;
+    color: #007eac;
+    font-weight: bold;
+}
+
+.contact-links {
+    width: 75%;
+    margin-top: 3vmax;
+}
+
+.icons a {
+    color: #104964;
+    font-size: 1.8vmax;
+}
+/*---------------------main---------------------*/
+.content-right {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18vmax 3% 0 5%;
+    float: none;
+    background-color: rgba(246, 249, 250, 0.5);
+}
+
+.content-left {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18vmax 3% 0 5%;
+    float: none;
+    background-color: rgba(246, 249, 250, 0.8);
+}
+
+.caption-of-section {
+    font-size: 4vmax;
+}
+
+.text-of-section {
+    font-size: 2.8vmax;
+}
+
+.gradiant-white {
+    height: 100%;
+    background: linear-gradient(transparent, #f6f9fa), rgba(255, 255, 255, 0.6);
+}
+/*----------------footer----------------*/
+footer {
+    height: 50px;
+}
+
+footer div {
+    height: 1px;
+}
+
+footer p {
+    position: relative;
+    top: 13px;
+    font-size: 14px;
+    padding: 0 5vw;
+}

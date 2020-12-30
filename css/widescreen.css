@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    min-width: 280px;
+    width: auto !important;
+    background-color: #f6f9fa;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+/*-----------------header-----------------*/
+.main-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 1px rgba(183, 183, 183, 0.2);
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.main-header-move-down {
+    background-color: #f6f9fa;
+    box-shadow: 0 1px 7px -1px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.logo-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    left: 55px;
+    bottom: 1px;
+    width: 230px;
+    height: 60px;
+}
+
+.logo-block img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo-block p {
+    font-size: 14px;
+    margin: 0;
+}
+
+#title {
+    position: relative;
+    right: 10px;
+    font-size: 21px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #0097C9;
+}
+
+.main-nav {
+    display: flex;
+    width: 580px;
+    height: 100%;
+    font-size: 20px;
+    padding-right: 40px;
+}
+
+.main-nav button {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-align: center;
+    padding: 21px;
+    flex-grow: 1;
+    color: black;
+}
+/*---------------------section-hello---------------------*/
+#hello {
+    height: calc(100vh + 1900px);
+    width: 100%;
+}
+
+#sub-hello {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: url("../images/landscape.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#greeting {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 28%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 4vw;
+    color: #f6faff;
+}
+
+#switch-word {
+    display: inline-block;
+    margin-left: 0.25em;
+    transition: 0.5s;
+}
+
+.yellow-filter {
+    height: 100%;
+    background-color: rgba(255, 234, 24, 0.1);
+}
+
+.opacity-100 {
+    opacity: 0;
+}
+/*---------------------section-what---------------------*/
+#what {
+    height: 97vw;
+    width: 100%;
+    background: url("../images/tree_backgr.png") no-repeat -22vw 21vw;
+    background-size: 84vw;
+    opacity: 0.8;
+}
+
+#what .content-right {
+    position: relative;
+    width: 30%;
+    float: right;
+    padding: 39vw 3.5vw 0 0;
+}
+/*---------------------section-why---------------------*/
+#why {
+    height: 77vw;
+    width: 100%;
+    background: url("../images/mindfulness_symbol.png") no-repeat 38.8vw 18.3vw;
+    background-size: 69.2vw;
+    opacity: 0.8;
+}
+
+.list {
+    font-size: 1.3vw;
+    line-height: 1.5em;
+    list-style: none;
+    font-weight: 700;
+}
+
+.list li:before {
+    content: "\203A";
+    color: #007eac;
+    font-size: 1.6vw;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.list li {
+    margin-top: 0.5em;
+}
+/*---------------------section-how---------------------*/
+#how {
+    height: 77vw;
+    width: 100%;
+    background: url("../images/fuji.png") no-repeat -62.2vw -14.6vw;
+    background-size: 168vw;
+    opacity: 0.8;
+}
+
+.ordered-list {
+    font-size: 1.3vw;
+    line-height: 1.5em;
+    list-style: none;
+    counter-reset: bracket;
+    font-weight: 700;
+}
+
+.ordered-list li:before {
+    content: counter(bracket) ") ";
+    font-weight: bold;
+    margin-right: 0.45em;
+    margin-left: -1.3em;
+    color: #007eac;
+    display: inline-block;
+}
+
+.ordered-list li {
+    counter-increment: bracket;
+    margin-top: 0.5em;
+}
+/*------------------section-contact------------------*/
+#contact {
+    height: 69vw;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.content-center {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 29vw 0 0 0;
+}
+
+.sn-invitation {
+    font-size: 3vw;
+    line-height: 1.8em;
+    color: #007eac;
+    font-weight: bold;
+}
+
+.contact-links {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    margin-top: 6vw;
+}
+
+.icons a {
+    color: #104964;
+    font-size: 1.6vw;
+    font-weight: bold;
+    transition: color 400ms;
+}
+
+.icons:hover a {
+    color: #7cb7b4;
+}
+
+#email_sign {
+    font-weight: bold;
+}
+/*----------------footer----------------*/
+footer div {
+    width: 100%;
+    height: 2px;
+    background-color: #007eac;
+}
+
+footer p {
+    font-size: 16px;
+    color: #104964;
+    text-align: end;
+    padding: 20px 70px;
+}
+/*---------------------main---------------------*/
+.content-right {
+    position: relative;
+    width: 30%;
+    float: right;
+    padding: 29vw 3.5vw 0 0;
+}
+
+.content-left {
+    position: relative;
+    width: 30%;
+    float: left;
+    padding: 29vw 0 0 7.3vw;
+}
+
+.caption-of-section {
+    font-size: 2.5vw;
+    line-height: 1.5em;
+    margin: 0.5em 0 0.5em 0;
+    color: #007eac;
+}
+
+.text-of-section {
+    font-size: 1.7vw;
+    line-height: 1.7em;
+}
+
+.gradiant-white {
+    height: 100%;
+    background: linear-gradient(transparent, #f6f9fa), rgba(255, 255, 255, 0.2);
+}
+
+.gap {
+    width: 100%;
+    height: 0;
+}
+
+.gap-after-hello {
+    width: 100%;
+    height: 20vh;
+ }
+/*----------------------------------global-----------------------------------*/
+@media(hover: hover) and (pointer: fine) {
+    .main-nav button:hover {
+        color: #0097C9;
+    }
+}
+
+@media(hover: none) {
+    .main-nav button:active {
+        color: #0097C9;
+    }
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+}
